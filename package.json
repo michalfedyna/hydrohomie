@@ -3,11 +3,14 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
+    "install:all": "npm install; cd ios; bundle install; bundle exec pod install",
+    "clean:all": "react-native clean --include android,cocoapods,metro,npm,watchman; rm -rf package-lock.json Gemfile.lock vendor",
+    "start": "react-native start --reset-cache",
+    "ios": "react-native run-ios --no-packager --list-devices",
+    "android": "react-native run-android --no-packager --list-devices",
     "lint": "eslint .",
-    "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "doctor": "react-native doctor"
   },
   "dependencies": {
     "react": "18.2.0",
