@@ -1,0 +1,6 @@
+appId: dev.fedyna.hydrohomie
+---
+- launchApp
+- tapOn: 'Click Me!'
+- assertVisible: 'Hello Settings!'
+- takeScreenshot: artifacts/Test
