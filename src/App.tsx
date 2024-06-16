@@ -1,8 +1,9 @@
 import React from 'react';
-import {Container} from '@navigation';
+import {NavigationContainer} from '@navigation';
+import {withProviders} from './Providers';
 
 function App() {
-  return <Container />;
+  return <NavigationContainer />;
 }
 
-export default App;
+export default withProviders(App);

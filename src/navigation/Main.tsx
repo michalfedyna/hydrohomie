@@ -8,7 +8,10 @@ const Stack = createNativeStackNavigator<MainStackParamList>();
 
 const Main: Component = () => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator
+      screenOptions={{
+        headerShown: false,
+      }}>
       <Stack.Screen name="Main" component={MainScreen} />
       <Stack.Screen name="Settings" component={SettingsScreen} />
     </Stack.Navigator>

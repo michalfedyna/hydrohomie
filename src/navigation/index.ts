@@ -1,2 +1,2 @@
-export {default as Container} from './Container';
+export {default as NavigationContainer} from './Container';
 export type {MainStackScreenProps} from './types';
