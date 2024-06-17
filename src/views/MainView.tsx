@@ -1,13 +1,16 @@
 import React from 'react';
-import {StyleSheet} from 'react-native';
+import {Button, StyleSheet} from 'react-native';
 import {Text, View} from '@components';
-import type {MainStackScreenProps} from '@navigation';
 import type {Component} from '@types';
 
-const SettingsScreen: Component<MainStackScreenProps<'Settings'>> = () => {
+interface MainViewProps {
+  onNavigate: () => void;
+}
+
+const MainView: Component<MainViewProps> = ({onNavigate}) => {
   return (
     <View style={styles.container}>
-      <Text>Hello Settings!</Text>
+      <Text>Hello Main!</Text>
     </View>
   );
 };
@@ -20,4 +23,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SettingsScreen;
+export default MainView;

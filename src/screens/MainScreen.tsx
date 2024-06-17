@@ -1,29 +1,14 @@
 import React from 'react';
-import {Button, StyleSheet} from 'react-native';
-import {Text, View} from '@components';
-import type {Screen} from '@types';
+import {MainView} from '@views';
+import type {Component} from '@types';
 import type {MainStackScreenProps} from '@navigation';
 
-const MainScreen: Screen<MainStackScreenProps<'Main'>> = ({navigation}) => {
-  return (
-    <View style={styles.container}>
-      <Text>Hello Main!</Text>
-      <Button
-        title="Click Me!"
-        onPress={() => {
-          navigation.navigate('Settings');
-        }}
-      />
-    </View>
-  );
-};
+const MainScreen: Component<MainStackScreenProps<'Main'>> = ({navigation}) => {
+  const onNavigate = () => {
+    navigation.navigate('Settings');
+  };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
+  return <MainView onNavigate={onNavigate} />;
+};
 
 export default MainScreen;

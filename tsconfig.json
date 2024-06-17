@@ -6,7 +6,8 @@
       "@types": ["src/Types.ts"],
       "@components": ["src/components/index.ts"],
       "@navigation": ["src/navigation/index.ts"],
-      "@screens": ["src/screens/index.ts"]
+      "@screens": ["src/screens/index.ts"],
+      "@views": ["src/views/index.ts"]
     }
   }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import {View as RNView} from 'react-native';
 import type {ViewProps as RNViewProps} from 'react-native';
-import type {Component} from '../Types';
+import type {Component} from '../../Types';
 
 interface ViewProps extends RNViewProps {}
 

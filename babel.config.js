@@ -18,6 +18,7 @@ module.exports = {
           '@components': './src/components/index.ts',
           '@navigation': './src/navigation/index.ts',
           '@screens': './src/screens/index.ts',
+          '@views': './src/views/index.ts',
           '@types': './src/Types.ts',
         },
       },

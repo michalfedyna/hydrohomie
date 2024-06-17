@@ -10,6 +10,7 @@
     "android": "react-native run-android --no-packager --list-devices",
     "lint": "eslint .",
     "test": "jest",
+    "e2e": "maestro test e2e/",
     "doctor": "react-native doctor",
     "link:assets": "react-native link-assets"
   },
@@ -42,6 +43,7 @@
     "jest": "^29.6.3",
     "prettier": "2.8.8",
     "react-test-renderer": "18.2.0",
+    "reactotron-react-native": "^5.1.7",
     "typescript": "5.0.4"
   },
   "engines": {
